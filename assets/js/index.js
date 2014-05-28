@@ -68,7 +68,8 @@ jQuery(function($) {
     if (!History.enabled) {
     	return false;
     }
-    History.Adapter.bind(window, 'statechange', function() {
+    
+    /*History.Adapter.bind(window, 'statechange', function() {
         var State = History.getState();
         $.get(State.url, function(result) {
             var $html = $(result);
@@ -107,6 +108,6 @@ jQuery(function($) {
                 History.pushState({}, title, url);
             }
         }
-    });
+    });*/
 
 });
